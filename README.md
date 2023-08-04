@@ -26,13 +26,13 @@ Abaixo está o Diagrama Entidade-Relacionamento que representa a estrutura das e
 
 ![Diagrama ERD](https://github.com/Mateuslll/images/raw/main/Uml_btg_DataBase.png)
 
-## Modelo Entidade Relacionamento (MER)
-
-O modelo detalhado das entidades, atributos e relacionamentos pode ser encontrado no arquivo `modelo_entidade_relacionamento.txt`.
-
 ## Scripts DDL e DML
 
-Os scripts SQL DDL (Data Definition Language) e DML (Data Manipulation Language) para criação das tabelas e inserção de dados podem ser encontrados nos arquivos `script_ddl.sql` e `script_dml.sql`, respectivamente.
+Os scripts SQL DDL (Data Definition Language) e DML (Data Manipulation Language) para criação das tabelas e inserção de dados podem ser encontrados no arquivo `SQL_BTG.sql`.
+
+## Banco de Dados e Ferramenta
+
+Foram empregadas as seguintes versões em meu ambiente: MySql Workbench 8.0.34 (arquitetura 64x), MySql Server 8.0.34 (arquitetura 64x) e Connector/J 8.0.33 (arquitetura 84x).
 
 ## API
 
