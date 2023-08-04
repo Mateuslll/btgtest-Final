@@ -28,7 +28,7 @@ Abaixo está o Diagrama Entidade-Relacionamento que representa a estrutura das e
 
 ## Scripts DDL e DML
 
-Os scripts SQL DDL (Data Definition Language) e DML (Data Manipulation Language) para criação das tabelas e inserção de dados podem ser encontrados no arquivo `SQL_BTG.sql`[`SQL_BTG.sql`](https://github.com/Mateuslll/images/blob/main/SQL_BTG.sql).
+Os scripts SQL DDL (Data Definition Language) e DML (Data Manipulation Language) para criação das tabelas e inserção de dados podem ser encontrados no arquivo [`SQL_BTG.sql`](https://github.com/Mateuslll/images/blob/main/SQL_BTG.sql).
 
 ## Banco de Dados e Ferramenta
 
