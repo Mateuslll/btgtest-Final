@@ -9,7 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/banktransaction")
@@ -38,4 +40,25 @@ public class BankTransactionController {
 
         return ResponseEntity.ok(transactions);
     }
+
+    @PutMapping("/{transactionId}")
+    public ResponseEntity updateTransactionValueEntry(@PathVariable int transactionId, @RequestBody RequestBankTransaction request) {
+        Optional<BankTransaction> optionalTransaction = repository.findById(transactionId);
+
+        if (optionalTransaction.isPresent()) {
+            BankTransaction transaction = optionalTransaction.get();
+            // Atualizar valor do valueEntry, typeOperation e numberAccount
+            transaction.setValueEntry(request.valueEntry());
+            transaction.setTypeOperation(request.typeOperation());
+            transaction.setNumberAccount(request.numberAccount());
+            repository.save(transaction);
+
+            return ResponseEntity.ok().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+
+
 }
